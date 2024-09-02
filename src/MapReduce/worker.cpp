@@ -19,7 +19,7 @@
 #include <thrift/transport/TTransportUtils.h>
 
 #include <mapreduce/MapReduce.h>
-#include <rpc/mapreduce/Master.h>
+#include <Master.h>
 
 using namespace apache::thrift;
 using namespace apache::thrift::protocol;
@@ -31,6 +31,7 @@ using std::vector;
 
 constexpr auto TIME_OUT = std::chrono::seconds(5);
 
+DEFINE_string(log_dir, "", "log directory");
 DEFINE_double(exit_possibility, 0, "exit possibility");
 DEFINE_double(delay_possibility, 0, "delay possibility");
 DEFINE_string(map_reduce_func, "", "map reduce dynamic library");

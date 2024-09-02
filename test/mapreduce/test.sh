@@ -1,15 +1,14 @@
 #!/bin/bash
-
 workerNum=3
 ep=(-1 0 0 0.8)
 dp=(-1 0 0.5 0)
 
 workDir=$(cd $(dirname $0); pwd)
 rootDir=$workDir/../..
-master=$rootDir/bin/master
-worker=$rootDir/bin/worker
+master=$rootDir/build/master
+worker=$rootDir/build//worker
 dataDir=$rootDir/data
-mapReduceFunc=$rootDir/bin/WordCount.so
+mapReduceFunc=$rootDir/build/lib/libWordCount.so
 
 cd $dataDir
 mkdir -p $rootDir/logs/master 

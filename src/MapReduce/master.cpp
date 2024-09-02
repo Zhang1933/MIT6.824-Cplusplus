@@ -9,7 +9,7 @@
 #include <thread>
 #include <unordered_map>
 
-#include <rpc/mapreduce/Master.h>
+#include <Master.h>
 #include <tools/ToString.hpp>
 
 #include <fmt/core.h>

@@ -5,8 +5,8 @@
 #include <iostream>
 #include <string>
 
-#include <rpc/kvraft/KVRaft_types.h>
-#include <rpc/mapreduce/MapReduce_types.h>
+#include <KVRaft_types.h>
+#include <MapReduce_types.h>
 
 #include <fmt/format.h>
 #include <fmt/ranges.h>
